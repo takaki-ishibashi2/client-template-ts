@@ -8,8 +8,8 @@
     "react-scripts-ts": "2.14.0"
   },
   "scripts": {
-    "start:local": "react-scripts-ts start",
-    "start:server": "serve --single build --port 8081",
+    "start": "react-scripts-ts start",
+    "serve": "serve --single build --port 8081",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
