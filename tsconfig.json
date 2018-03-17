@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+  "compilerOptions": { // Detail: https://www.typescriptlang.org/docs/handbook/compiler-options.html
     "outDir": "build/dist",
     "module": "esnext", // Desc: module code =  "None", "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015" or "ESNext"
     "target": "es5", // Desc: ECMAScript version = "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext"
