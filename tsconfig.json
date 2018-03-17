@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "esnext", // Desc: module code =  "None", "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015" or "ESNext"
+    "target": "es5", // Desc: ECMAScript version = "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext"
+    "lib": ["es6", "dom"], // Desc: Lib list in compilation // Detail: https://www.typescriptlang.org/docs/handbook/compiler-options.html
+    "sourceMap": false, // why?: (probably) use to debugging in chrome dev tool
+    "allowJs": true,
+    "jsx": "react", // Desc: mode for jsx = "preserve"(output .jsx), "react"(output .js) or "react-native"(output .js) // Detail: http://www.typescriptlang.org/docs/handbook/jsx.html
+    "moduleResolution": "node", // Why?: for import statement. // Desc: module resolution mode = module === "AMD" || "System" || "ES6" ? "Classic" : "node" // Detail: https://www.typescriptlang.org/docs/handbook/module-resolution.html
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true, // Why?: Disallow inconsistently-cased references to the same file.
+    "noImplicitReturns": true, // Why?: Report error when not ALL code PATHs in function return a value.
+    "noImplicitThis": true, // Why?: Raise error on THIS expressions with an implied any type.
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true, // Detail: https://github.com/Microsoft/TypeScript/issues/1232#issuecomment-64510362
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
