@@ -6,4 +6,6 @@ server.use(express.static(path.join(__dirname, 'build')));
 server.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-server.listen(`Listening on ${port}...`);
+server.listen(port, () => {
+  console.log(`Listening on ${port}...`);
+});
