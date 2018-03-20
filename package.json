@@ -7,15 +7,14 @@
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts-ts": "2.14.0",
     "serve": "^6.5.3"
   },
   "scripts": {
-    "dev": "react-scripts-ts start",
+    "dev": "./node_modules/.bin/react-scripts-ts start",
     "start": "node server.js",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
+    "build": "./node_modules/.bin/react-scripts-ts build",
+    "test": "./node_modules/.bin/react-scripts-ts test --env=jsdom",
+    "eject": "./node_modules/.bin/react-scripts-ts eject",
     "deploy:clean": "rm -rf deploy/*",
     "deploy:source-copy": "cp -r build deploy/ && cp package.json deploy/ && cp server.js deploy/",
     "deploy:zip": "cd deploy && zip -r server.zip *",
@@ -26,6 +25,7 @@
     "@types/node": "^9.4.7",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
+    "react-scripts-ts": "^2.14.0",
     "typescript": "^2.7.2"
   },
   "author": "takaki.ishibashi2 <taka@reaktor.co.jp>"
